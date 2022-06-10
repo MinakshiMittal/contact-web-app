@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl text-light-black;
+  }
+  th {
+    @apply bg-gray-200 p-4 font-semibold;
+  }
+}
+
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-r from-blue to-purple;
+  }
+  .close {
+    @apply absolute text-gray-400 text-xl font-semibold;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .modal-container {
+    @apply w-full h-screen bg-black-transparent flex-center fixed top-0 z-20;
+  }
+  .modal {
+    @apply flex flex-col items-center sm:w-3/5 w-11/12 border rounded-xl justify-center bg-white absolute p-2;
+  }
+  .close-container {
+    @apply absolute w-8 h-8 rounded-full border top-4 right-4 flex-center border-gray-400 cursor-pointer;
+  }
+}
