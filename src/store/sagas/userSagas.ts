@@ -25,7 +25,7 @@ import {
   SignUpPayload,
   UpdateProfilePayload,
   User,
-  UserInitialState,
+  // UserInitialState,
 } from "../../utils/types";
 
 type AddAnotherAccount = {

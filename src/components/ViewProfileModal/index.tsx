@@ -60,7 +60,7 @@ export const ViewProfileModal = ({
       }
     });
     return () => {};
-  }, []);
+  }, [details, user?.user.email, dispatch]);
 
   const handleMessages = async (details: ContactDetails) => {
     navigate("/all-messages");
@@ -163,7 +163,9 @@ export const ViewProfileModal = ({
             />
           )}
           {!details?.profileURL && (
-            <p className="text-purple text-7xl font-medium">{details?.name[0]}</p>
+            <p className="text-purple text-7xl font-medium">
+              {details?.name[0]}
+            </p>
           )}
         </div>
         <div className="absolute w-14 h-14 cursor-pointer top-0 right-6 bg-white rounded-full shadow-default flex items-center justify-center">
